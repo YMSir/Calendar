@@ -1,14 +1,23 @@
+/*reset*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 /*日历*/
 #main {
-  width: 800px;
-  margin: 5vh auto;
-  border: cornflowerblue 1px solid;
+  width: 900px;
+  margin: 10vh auto;
+  padding: 16px;
+  background-color: rgb(53, 112, 216);
+  border-radius: 10px;
 }
 
 /*年月选择器*/
 #main > #nav {
-  border-bottom: 1px solid cornflowerblue;
-  padding: 20px 36px;
+  padding: 20px;
+  text-align: right;
 }
 
 #main > #nav > label {
@@ -17,12 +26,61 @@
 
 #main > #nav > label > select {
   min-width: 110px;
+  height: 26px;
   text-align: center;
   text-align-last: center;
 }
 
+#main > #nav > button {
+  width: 110px;
+  height: 26px;
+  cursor: pointer;
+}
+
 /*日历内容*/
 #main > #section {
-  min-height: 300px;
-  padding: 20px 36px;
+  min-height: 100px;
+}
+
+#main > #section > table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#main > #section > table th {
+  text-align: center;
+  height: 66px;
+  color: #fff;
+}
+
+#main > #section > table td {
+  text-align: center;
+  cursor: pointer;
+  padding: 26px;
+}
+
+#main > #section > table td > font {
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  display: inline-block;
+}
+
+#main > #section > table td.current-month {
+  color: #fff;
+}
+
+#main > #section > table td.pre-month,
+#main > #section > table td.next-month {
+  color: #c9c9c9;
+}
+
+#main > #section > table td.today > font {
+  background-color: rgb(221, 189, 94);
+}
+
+#main > #section > table td.active > font,
+#main > #section > table td:hover > font {
+  background-color: rgb(80, 144, 250);
 }

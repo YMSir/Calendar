@@ -17,8 +17,7 @@
     >
     <title>万年历</title>
   </head>
-  <body>
-
+  <body onload="init()">
     <!--日历-->
     <main id="main">
       <!--年月选择器-->
@@ -36,10 +35,28 @@
             <option label="请选择月份"></option>
           </select>
         </label>
+
+        <button id="query">查询</button>
       </nav>
 
       <!--日历内容-->
-      <section id="section"></section>
+      <section id="section">
+        <table>
+          <thead>
+            <tr>
+              <th>日</th>
+              <th>一</th>
+              <th>二</th>
+              <th>三</th>
+              <th>四</th>
+              <th>五</th>
+              <th>六</th>
+            </tr>
+          </thead>
+
+          <tbody></tbody>
+        </table>
+      </section>
     </main>
 
     <script src="index.js"></script>
