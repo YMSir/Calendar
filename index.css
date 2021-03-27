@@ -1,0 +1,28 @@
+/*日历*/
+#main {
+  width: 800px;
+  margin: 5vh auto;
+  border: cornflowerblue 1px solid;
+}
+
+/*年月选择器*/
+#main > #nav {
+  border-bottom: 1px solid cornflowerblue;
+  padding: 20px 36px;
+}
+
+#main > #nav > label {
+  margin-right: 36px;
+}
+
+#main > #nav > label > select {
+  min-width: 110px;
+  text-align: center;
+  text-align-last: center;
+}
+
+/*日历内容*/
+#main > #section {
+  min-height: 300px;
+  padding: 20px 36px;
+}
